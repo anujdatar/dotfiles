@@ -1,0 +1,9 @@
+[user]
+	name = <git-user-name>
+	email = <git-email>
+	signingkey = <signing-gpg-key-id>
+[commit]
+	gpgSign = true
+[init]
+    defaultBranch = main
+

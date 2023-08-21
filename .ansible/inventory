@@ -1,0 +1,9 @@
+[server1]
+<server-ip>
+[server2]
+<server-ip>
+[server3]
+<server-ip>
+
+[server4]
+<server-address> ansible_user=<some-non-default-username>
