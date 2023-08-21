@@ -8,6 +8,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+export ANSIBLE_CONFIG="$HOME/.ansible/ansible.cfg"
 CODE_FOLDER='<path-to-Code>'
 
 alias cdcode='cd $CODE_FOLDER'
