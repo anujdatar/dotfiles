@@ -28,3 +28,14 @@ alias wscrcpy="adb kill-server && adb tcpip 5555 && db connect <device-ip>:5555 
 export QT_QPA_PLATFORMTHEME=gtk2
 
 export GPG_TTY=$(tty)
+
+# some more aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias vim=nvim
+
+if [ -f "$HOME/.bash_aliases" ]; then
+    . $HOME/.bash_aliases
+fi
+
