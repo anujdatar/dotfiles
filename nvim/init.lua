@@ -17,7 +17,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup('plugins')
+require('lazy').setup({
+    { import = 'plugins' },
+    -- { import = "lazyvim.plugins.extras.coding.copilot" },
+})
 
 -- setup keymap at the end
 -- local mappings = require('mappings')

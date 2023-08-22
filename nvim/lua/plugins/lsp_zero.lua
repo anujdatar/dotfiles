@@ -19,7 +19,13 @@ return {
 
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },
+            {
+                'hrsh7th/nvim-cmp',
+                dependencies = {
+                    'hrsh7th/cmp-emoji',
+                    { 'zbirenbaum/copilot-cmp', opts = {}, }
+                }
+            },
             -- Snipped Engine & its associated nvim-cmp source
             { 'L3MON4D3/LuaSnip' },
             { 'saadparwaiz1/cmp_luasnip' },
@@ -142,5 +148,15 @@ return {
                 }
             })
         end,
+    },
+    {
+        'zbirenbaum/copilot.lua',
+        enabled = true,
+        cmd = 'Copilot',
+        event = 'InsertEnter',
+        opts = {
+            suggestions = { enabled = true },
+            panel = { enabled = true },
+        },
     },
 }
