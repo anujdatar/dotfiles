@@ -37,10 +37,10 @@ set('v', 'K', ":m '>-2<CR>gv=gv", { desc = 'Move selected line up' })
 set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'Open [U]ndotree dialog' })
 
 -- harpoon
-set('n', '<leader>ha', require('harpoon.mark').add_file, { desc = '[A]ppend file to [H]arpoon list' })
-set('n', '<leader>ht', require('harpoon.ui').toggle_quick_menu, { desc = '[T]oggle [H]arpoon quick menu' })
-set('n', '<leader>hn', require('harpoon.ui').nav_next, { desc = '[N]ext [H]arpoon file' })
-set('n', '<leader>hp', require('harpoon.ui').nav_prev, { desc = '[P]revious [H]arpoon file' })
+set('n', '<leader>ha', require('harpoon.mark').add_file, { desc = '[H]arpoon: [A]ppend file to list' })
+set('n', '<leader>ht', require('harpoon.ui').toggle_quick_menu, { desc = '[H]arpoon: [T]oggle quick menu' })
+set('n', '<leader>hn', require('harpoon.ui').nav_next, { desc = '[H]arpoon: [N]ext file' })
+set('n', '<leader>hp', require('harpoon.ui').nav_prev, { desc = '[H]arpoon: [P]revious file' })
 
 -- fugitive
 set('n', '<leader>gs', vim.cmd.Git, { desc = 'Git status?' })
