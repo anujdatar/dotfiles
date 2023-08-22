@@ -53,5 +53,13 @@ return {
             require('nvim-tree').setup {}
         end,
     },
+    {
+        'akinsho/bufferline.nvim',
+        version = "*",
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
+        opts = {},
+    },
 }
 
