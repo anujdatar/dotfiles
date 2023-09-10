@@ -5,6 +5,10 @@ set('i', 'jj', '<Esc>')
 set('i', 'kk', '<Esc>')
 set('i', 'jk', '<Esc>')
 set('i', 'kj', '<Esc>')
+
+-- window/pane splitting
+set('n', '<leader>sv', '<cmd>vs<CR>', { desc = '[S]plit window [V]ertically' })
+set('n', '<leader>sh', '<cmd>sp<CR>', { desc = '[S]plit window [H]orizontally' })
 -- general command mappings
 set('n', '<leader>;', ':', { desc = 'Enter command mode', nowait = true })
 -- set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Exit to Netrw' })
