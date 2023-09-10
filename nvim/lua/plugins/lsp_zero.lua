@@ -51,7 +51,10 @@ return {
             local lsp = require('lsp-zero').preset({})
 
             lsp.nvim_workspace()
-            lsp.on_attach(function(_, bufnr)
+            lsp.on_attach(function(client, bufnr)
+                -- client.server_capabilities.document_formatting = true
+                client.server_capabilities.documentFormattingProvider = true
+
                 lsp.default_keymaps({ buffer = bufnr })
 
                 local map = function(key, cmd, desc)
@@ -85,6 +88,7 @@ return {
                         print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
                     end, '[W]orkspace [L]ist folders'
                 )
+                map('<leader>ef', '<cmd>EslintFixAll<CR>', '[E]slint [F]ix Formatting')
 
                 -- create a command `:Format` local to the LSP buffer
                 vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
