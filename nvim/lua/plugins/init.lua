@@ -18,9 +18,25 @@ return {
         -- Theme
         'navarasu/onedark.nvim',
         priority = 1000,
+        -- config = function()
+            -- vim.cmd.colorscheme 'onedark'
+        -- end,
+    },
+    {
+        -- Theme
+        'folke/tokyonight.nvim',
+        priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'onedark'
+            vim.cmd.colorscheme 'tokyonight'
         end,
+    },
+    {
+        -- Theme
+        'rebelot/kanagawa.nvim',
+        priority = 1000,
+        -- config = function()
+            -- vim.cmd.colorscheme 'kanagawa'
+        -- end,
     },
     {
         'nvim-telescope/telescope.nvim',
