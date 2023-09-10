@@ -9,6 +9,7 @@ set('i', 'kj', '<Esc>')
 -- window/pane splitting
 set('n', '<leader>sv', '<cmd>vs<CR>', { desc = '[S]plit window [V]ertically' })
 set('n', '<leader>sh', '<cmd>sp<CR>', { desc = '[S]plit window [H]orizontally' })
+
 -- general command mappings
 set('n', '<leader>;', ':', { desc = 'Enter command mode', nowait = true })
 -- set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Exit to Netrw' })
@@ -88,10 +89,13 @@ set('n', '<leader>mi', vim.cmd.MasonInstallAll, { desc = '[M]ason [I]nstall all'
 -- Diagnostic keymaps
 set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
-set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
-set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+-- set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+-- set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- NvimTree
 set('n', '<leader>tt', vim.cmd.NvimTreeToggle, { desc = '[T]oggle Nvim[T]ree' })
 set('n', '<leader>tr', vim.cmd.NvimTreeRefresh, { desc = 'Nvim[T]ree [R]efresh' })
 set('n', '<leader>tf', vim.cmd.NvimTreeFocus, { desc = 'Nvim[T]ree [F]ocus' })
+
+-- Eslint Fix Formatting
+-- set('n', '<leader>ef', '<cmd>EslintFixAll<CR>', { desc = '[E]slint [F]ix Formatting'})
