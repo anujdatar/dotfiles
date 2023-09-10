@@ -11,6 +11,7 @@ g.loaded_netrwPlugin = 1
 opt.termguicolors = true  -- enable highlight groups
 opt.guicursor = ''  -- fat cursor
 opt.mouse = 'a'  -- enable mouse
+opt.mousemoveevent = true
 opt.clipboard = 'unnamedplus'  -- sync vim and OS clipboard
 opt.breakindent = true  -- enable break indent
 opt.completeopt = 'menuone,noselect'  -- better completion experience
