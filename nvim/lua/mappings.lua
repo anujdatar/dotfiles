@@ -1,5 +1,10 @@
 local set = vim.keymap.set
 
+-- escape sequences from insert mode
+set('i', 'jj', '<Esc>')
+set('i', 'kk', '<Esc>')
+set('i', 'jk', '<Esc>')
+set('i', 'kj', '<Esc>')
 -- general command mappings
 set('n', '<leader>;', ':', { desc = 'Enter command mode', nowait = true })
 -- set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Exit to Netrw' })
