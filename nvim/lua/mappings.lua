@@ -97,5 +97,5 @@ set('n', '<leader>tt', vim.cmd.NvimTreeToggle, { desc = '[T]oggle Nvim[T]ree' })
 set('n', '<leader>tr', vim.cmd.NvimTreeRefresh, { desc = 'Nvim[T]ree [R]efresh' })
 set('n', '<leader>tf', vim.cmd.NvimTreeFocus, { desc = 'Nvim[T]ree [F]ocus' })
 
--- Eslint Fix Formatting
--- set('n', '<leader>ef', '<cmd>EslintFixAll<CR>', { desc = '[E]slint [F]ix Formatting'})
+-- bufferline.nvim bindings
+set('n', '<leader>b', vim.cmd.BufferLinePick, { desc = 'Pick a [B]uffer to move to'})
