@@ -16,7 +16,7 @@ syntax on
 filetype plugin indent on
 
 " Set map leader
-" let mapleader = ","
+let mapleader = " "
 
 " Security
 set modelines=0
