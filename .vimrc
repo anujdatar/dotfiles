@@ -15,7 +15,7 @@ syntax on
 " For plugins to load correctly
 filetype plugin indent on
 
-" TODO: Pick a leader key
+" Set map leader
 " let mapleader = ","
 
 " Security
@@ -85,7 +85,7 @@ vnoremap <F1> :set invfullscreen<CR>
 " Textmate holdouts
 
 " Formatting
-map <leader>q gqip
+"map <leader>q gqip
 
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
@@ -93,6 +93,14 @@ set listchars=tab:▸\ ,eol:¬
 " set list " To enable by default
 " Or use your leader key + l to toggle on/off
 map <leader>l :set list!<CR> " Toggle tabs and EOL
+
+" other keymaps
+map <leader>pv :Ex<CR>  " Close file, return to netrw
+map <leader>q :q<CR>  " [Q]uit
+map <leader>wq :wq<CR>  " [W]rite current buffer and [Q]uit
+
+" enter command mode
+map <leader>; :
 
 "packadd! dracula
 "syntax enable
