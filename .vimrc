@@ -94,9 +94,9 @@ set listchars=tab:▸\ ,eol:¬
 " Or use your leader key + l to toggle on/off
 map <leader>l :set list!<CR> " Toggle tabs and EOL
 
-packadd! dracula
-syntax enable
-colorscheme dracula
+"packadd! dracula
+"syntax enable
+"colorscheme dracula
 
 " Color scheme (terminal)
 " set t_Co=256
