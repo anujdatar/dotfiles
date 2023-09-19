@@ -12,11 +12,17 @@ set('n', '<leader>sh', '<cmd>sp<CR>', { desc = '[S]plit window [H]orizontally' }
 
 -- general command mappings
 set('n', '<leader>;', ':', { desc = 'Enter command mode', nowait = true })
--- set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Exit to Netrw' })
+-- set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Exit to Netrw' })  -- netrw disabled for now
 set('n', 'Q', '<nop>', { desc = 'No operation, Q bad?' })
 set('n', '<leader>q', '<cmd>q<CR>', { desc = '[Q]uit or close current buffer' })
 set('n', '<leader>wq', '<cmd>wq<CR>', { desc = '[W]rite current buffer and [Q]uit' })
 set('n', '<leader>x', "<cmd>!chmod +x %<cr>", { desc = 'Make current file executable', silent = true })
+set(
+    { 'n', 'v', 'i' },
+    '<C-s>',
+    '<cmd>w<CR>',
+    { desc = 'Write current buffer' }
+)
 
 -- navigation related
 -- handle j and k movement when wrapped lines are present
