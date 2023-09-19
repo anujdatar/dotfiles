@@ -79,10 +79,10 @@ set('n', '<leader>fs', require('telescope.builtin').spell_suggest, { desc = '[F]
 set('n', '<leader>fc', require('telescope.builtin').commands, { desc = '[F]ind [C]ommands' })
 set('n', '<leader>fq', require('telescope.builtin').quickfix, { desc = '[F]ind [Q]uickfix' })
 
-set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
-set('n', '<leader>gc', require('telescope.builtin').git_commits, { desc = 'Search [G]it [C]ommits' })
-set('n', '<leader>gb', require('telescope.builtin').git_branches, { desc = 'Search [G]it [B]ranches' })
-set('n', '<leader>gs', require('telescope.builtin').git_status, { desc = 'Search [G]it [S]tatus' })
+set('n', '<leader>tf', require('telescope.builtin').git_files, { desc = '[T]elescope: [G]it Files' })
+set('n', '<leader>tc', require('telescope.builtin').git_commits, { desc = '[T]elescope: Search Git [C]ommits' })
+set('n', '<leader>tb', require('telescope.builtin').git_branches, { desc = '[T]elescope: Search Git [B]ranches' })
+set('n', '<leader>ts', require('telescope.builtin').git_status, { desc = '[T]elescope: Search Git [S]tatus' })
 
 -- mason
 set('n', '<leader>ma', vim.cmd.Mason, { desc = 'Launch [M]ason' })
