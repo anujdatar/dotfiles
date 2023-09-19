@@ -9,7 +9,7 @@ g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 -------------------------------------- options ------------------------------------------
 opt.termguicolors = true  -- enable highlight groups
-opt.guicursor = ''  -- fat cursor
+-- opt.guicursor = ''  -- fat cursor
 opt.mouse = 'a'  -- enable mouse
 opt.mousemoveevent = true
 opt.clipboard = 'unnamedplus'  -- sync vim and OS clipboard
