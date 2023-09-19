@@ -10,6 +10,7 @@ fi
 
 export ANSIBLE_CONFIG="$HOME/.ansible/ansible.cfg"
 CODE_FOLDER='<path-to-Code>'
+NOTES_FOLDER='<path-to-Notes>'
 
 alias cdcode='cd $CODE_FOLDER'
 alias cdardno='cd $CODE_FOLDER/arduino'
@@ -20,6 +21,7 @@ alias cdjs='cd $CODE_FOLDER/js_projects'
 alias cdpy='cd $CODE_FOLDER/python_projects'
 alias cdtut='cd $CODE_FOLDER/tutorials'
 alias work='cd $CODE_FOLDER/work'
+alias notes='vim $NOTES_FOLDER/index.md'
 
 alias goog="ping -c 4 www.google.com"
 alias goog6="ping6 -c 4 www.google.com"
