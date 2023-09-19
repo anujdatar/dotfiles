@@ -29,7 +29,8 @@ alias goog6="ping6 -c 4 www.google.com"
 alias wscrcpy="adb kill-server && adb tcpip 5555 && db connect <device-ip>:5555 && scrcpy"
 export QT_QPA_PLATFORMTHEME=gtk2
 
-export GPG_TTY=$(tty)
+GPG_TTY=$(tty)
+export GPG_TTY
 
 # some more aliases
 alias ll='ls -alF'
