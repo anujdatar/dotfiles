@@ -101,6 +101,7 @@ return {
 
             local cmp = require('cmp')
             local luasnip = require('luasnip')
+            require('luasnip.loaders.from_vscode').lazy_load()
             -- local cmp_action = require('lsp-zero').cmp_action
 
             cmp.setup({
