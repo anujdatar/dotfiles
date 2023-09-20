@@ -1,0 +1,19 @@
+{
+    "frontmatter": {
+        "prefix": ["frontmatter", "ft"],
+        "body": [
+            "---",
+            "title: $1",
+            "description: $2",
+            "date: $3",
+            "updated: $4",
+            "author: $5",
+            "tags:",
+            "  - $6",
+            "aliases:",
+            "  - $7",
+            "---",
+            "\n# $8"
+        ]
+    }
+}
