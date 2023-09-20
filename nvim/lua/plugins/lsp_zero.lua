@@ -101,8 +101,9 @@ return {
 
             local cmp = require('cmp')
             local luasnip = require('luasnip')
-            require('luasnip.loaders.from_vscode').lazy_load()
             luasnip.filetype_extend('vimwiki', { 'markdown' })
+            require('luasnip.loaders.from_vscode').lazy_load()
+            require('luasnip.loaders.from_vscode').lazy_load({ paths = "~/.config/nvim/snippets" })
             -- local cmp_action = require('lsp-zero').cmp_action
 
             cmp.setup({
