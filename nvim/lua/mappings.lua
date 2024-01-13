@@ -106,4 +106,4 @@ set('n', '<leader>tr', vim.cmd.NvimTreeRefresh, { desc = 'Nvim[T]ree [R]efresh' 
 set('n', '<leader>tf', vim.cmd.NvimTreeFocus, { desc = 'Nvim[T]ree [F]ocus' })
 
 -- bufferline.nvim bindings
-set('n', '<leader>b', vim.cmd.BufferLinePick, { desc = 'Pick a [B]uffer to move to'})
+-- set('n', '<leader>b', vim.cmd.BufferLinePick, { desc = 'Pick a [B]uffer to move to'})
