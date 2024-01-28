@@ -1,6 +1,4 @@
-require('settings')
--- local utils = require('utils')
-
+require('core')
 -- Install package manager
 -- https://github.com/folke/lazy.nvim
 -- :help lazy.nvim.txt for more info
@@ -22,7 +20,5 @@ require('lazy').setup({
     -- { import = "lazyvim.plugins.extras.coding.copilot" },
 })
 
--- setup keymap at the end
--- local mappings = require('mappings')
-require('mappings')
--- utils.set_keymaps(mappings)
+require('core.mappings')
+
