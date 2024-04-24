@@ -30,7 +30,7 @@ return {
                 'yaml-language-server',
                 'bash-language-server',
                 'shellcheck',
-                'prittier',
+                'prettier',
                 'ltex-ls'
             },
             ui = {
