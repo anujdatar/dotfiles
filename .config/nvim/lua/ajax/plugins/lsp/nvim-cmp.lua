@@ -11,7 +11,7 @@ return {
             'L3MON4D3/LuaSnip',
             -- follow latest release
             version = 'v2.*',
-            build = 'make install_jsxregexp',
+            -- build = 'make install_jsxregexp',
         },
 
         'saadparwaiz1/cmp_luasnip', -- source for LuaSnip
