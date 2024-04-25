@@ -25,6 +25,7 @@ return {
                 'black', -- python formatter
                 'gopls', -- go language server
                 'goimports', -- go imports sorter
+                'golangci-lint', -- go linter
                 'rust-analyzer',
                 'dockerfile-language-server',
                 'yaml-language-server',
