@@ -12,8 +12,8 @@ return{
 
     config= function()
         local lspconfig = require('lspconfig')
-        local mason_lspconfig = require('mason-lspconfig')
-        local cmp_nvim_lsp = require('cmp_nvim_lsp')
+        -- local mason_lspconfig = require('mason-lspconfig')
+        -- local cmp_nvim_lsp = require('cmp_nvim_lsp')
 
         vim.api.nvim_create_autocmd('LspAttach', {
             group = vim.api.nvim_create_augroup('UserLspConfig', {}),
@@ -84,7 +84,7 @@ return{
         })
 
         -- enable autocompletion (assign to every lsp server)
-        local capabilities = cmp_nvim_lsp.default_capabilities()
+        -- local capabilities = cmp_nvim_lsp.default_capabilities()
 
         -- Change the Diagnostic symbols in the sign column (gutter)
         local signs = { Error = ' ', Warn = ' ', Hint = '󰠠 ', Info = ' ' }
