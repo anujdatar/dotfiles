@@ -1,2 +1,2 @@
-require('ajax.core')
-require('ajax.lazy')
+require("ajax.core")
+require("ajax.lazy")
