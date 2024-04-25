@@ -27,6 +27,9 @@ return {
 
         local lspkind = require('lspkind')
 
+        -- associate vimwiki and markdown with markdown source
+        luasnip.filetype_extend('vimwiki', { 'markdown' })
+
         -- loads vscode style snippets from plugins
         -- and custom snippets from ~/.config/nvim/snippets
         require('luasnip.loaders.from_vscode').lazy_load()
