@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup(
     {
         { import = 'ajax.plugins' },
-        { import = 'ajax.plugins.lsp' }
+        { import = 'ajax.plugins.lsp' },
     },
     {
         checker = {
