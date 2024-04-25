@@ -93,17 +93,17 @@ return{
             vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
         end
 
-        mason_lspconfig.setup_handlers({
-            -- default handler for installed servers
-            function(server_name)
-                lspconfig(server_name).setup({
-                    capabilities = capabilities,
-                    on_attach = function(client, bufnr)
-                        -- enable completion
-                        require('cmp_nvim_lsp').setup({ bufnr = bufnr })
-                    end,
-                })
-            end,
-        })
+        -- mason_lspconfig.setup_handlers({
+        --     default handler for installed servers
+        --     function(server_name)
+        --         lspconfig(server_name).setup({
+        --             capabilities = capabilities,
+        --             on_attach = function(client, bufnr)
+        --                 -- enable completion
+        --                 require('cmp_nvim_lsp').setup({ bufnr = bufnr })
+        --             end,
+        --         })
+        --     end,
+        -- })
     end,
 }
