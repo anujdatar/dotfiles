@@ -7,16 +7,16 @@ local g = vim.g
 g.mapleader = ' '
 g.maplocalleader = ' '
 -------------------------------------- options ------------------------------------------
-opt.cursorline = true  -- highlight current line
-opt.termguicolors = true  -- enable highlight groups
-opt.background = 'dark'  -- set background to dark, if colorscheme supports both
-opt.signcolumn = 'yes'  -- always show signcolumn, so text dowsn't jump
+opt.cursorline = true -- highlight current line
+opt.termguicolors = true -- enable highlight groups
+opt.background = 'dark' -- set background to dark, if colorscheme supports both
+opt.signcolumn = 'yes' -- always show signcolumn, so text dowsn't jump
 -- opt.guicursor = ''  -- fat cursor
-opt.mouse = 'a'  -- enable mouse
+opt.mouse = 'a' -- enable mouse
 opt.mousemoveevent = true
-opt.clipboard = 'unnamedplus'  -- sync vim and OS clipboard
-opt.breakindent = true  -- enable break indent
-opt.completeopt = 'menuone,noselect'  -- better completion experience
+opt.clipboard = 'unnamedplus' -- sync vim and OS clipboard
+opt.breakindent = true -- enable break indent
+opt.completeopt = 'menuone,noselect' -- better completion experience
 
 -- Line numbering
 opt.nu = true
