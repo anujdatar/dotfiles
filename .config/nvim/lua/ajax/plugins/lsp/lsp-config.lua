@@ -284,6 +284,10 @@ return {
             },
         })
 
+        -- mason keymap
+        vim.keymap.set('n', '<leader>ma', vim.cmd.Mason,
+        { noremap = true, silent = true, desc = '[M]ason [A]ction' })
+
         require('mason-tool-installer').setup({
             ensure_installed = ensure_installed,
         })
