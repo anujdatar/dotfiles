@@ -24,6 +24,17 @@ set(
 set('n', '<leader>se', '<C-w>=', { desc = 'Make [S]plits [E]qual size' })
 set('n', '<leader>sx', '<cmd>close<CR>', { desc = 'Close current split' })
 
+-- Basic movement keybinds, these make navigating splits easy for me
+set('n', '<c-h>', '<c-w><c-h>') -- move to left pane
+set('n', '<c-j>', '<c-w><c-j>') -- move to pane below
+set('n', '<c-k>', '<c-w><c-k>') -- move to pane above
+set('n', '<c-l>', '<c-w><c-l>') -- move to right pane
+-- These mappings control the size of splits (height/width)
+set('n', '<M-,>', '<c-w>5<') -- make pane narrower
+set('n', '<M-.>', '<c-w>5>') -- make pane wider
+set('n', '<M-t>', '<C-W>+') -- make pane taller
+set('n', '<M-s>', '<C-W>-') -- make pane shorter
+
 -- tab related
 -- set('n', '<leader>bo', '<cmd>tabnew<CR>', { desc = 'Ta[B] [O]pen new' })
 -- set('n', '<leader>bx', '<cmd>tabclose<CR>', { desc = 'Ta[B] close [X]' })
