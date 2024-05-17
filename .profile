@@ -33,9 +33,11 @@ GPG_TTY=$(tty)
 export GPG_TTY
 
 # some more aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# some more ls aliases
+alias ls='ls --color'
+alias ll='ls -alF --color'
+alias la='ls -A --color'
+alias l='ls -CF --color'
 alias vim=nvim
 
 if [ -f "$HOME/.bash_aliases" ]; then
