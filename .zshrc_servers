@@ -74,11 +74,15 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# Shell integrations
-#eval "$(fzf --zsh)" # only use when fzf version >0.48.0, Debian bookworm currently on 0.38.x
-# use the following instead
+############### Shell integrations
+# only use eval when fzf version >0.48.0
+#eval "$(fzf --zsh)"
+# Debian 12, fzf currently on 0.38.x
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
+# Fedora 39, fzf currently on 0.44.x
+#source /usr/share/fzf/shell/key-bindings.zsh
+#source /etc/bash_completion.d/fzf
 
 # initialize zoxide, replacing cd does not work
 # and can't init without changing cmd, cuz zi is a zinit command
