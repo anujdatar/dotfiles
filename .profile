@@ -38,6 +38,7 @@ alias ls='ls --color'
 alias ll='ls -alF --color'
 alias la='ls -A --color'
 alias l='ls -CF --color'
+alias c='clear'
 alias vim=nvim
 
 if [ -f "$HOME/.bash_aliases" ]; then
