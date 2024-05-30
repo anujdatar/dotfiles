@@ -6,9 +6,11 @@ return {
 
         conform.setup({
             formatters_by_ft = {
-                javascript = { 'eslint_d' },
-                typescript = { 'eslint_d' },
-                vue = { 'eslint_d' },
+                javascript = { 'prettier' },
+                typescript = { 'prettier' },
+                javascriptreact = { 'prettier' },
+                typescriptreact = { 'prettier' },
+                vue = { 'prettier' },
                 css = { 'prettier' },
                 html = { 'prettier' },
                 json = { 'prettier' },
