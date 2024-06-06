@@ -2,9 +2,8 @@ local set = vim.keymap.set
 
 -- escape sequences from insert mode
 set('i', 'jj', '<Esc>', { desc = 'Exit insert mode' })
-set('i', 'jj', '<Esc>', { desc = 'Exit insert mode' })
-set('i', 'jj', '<Esc>', { desc = 'Exit insert mode' })
-set('i', 'jj', '<Esc>', { desc = 'Exit insert mode' })
+set('i', 'kk', '<Esc>', { desc = 'Exit insert mode' })
+set('i', 'kj', '<Esc>', { desc = 'Exit insert mode' })
 
 -- clear search highlights
 set('n', '<leader>nh', ':nohl<CR>', { desc = 'Clear search highlights' })
