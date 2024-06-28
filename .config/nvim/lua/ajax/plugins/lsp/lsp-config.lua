@@ -181,8 +181,8 @@ return {
                     and client.server_capabilities.inlayHintProvider
                     and vim.lsp.inlay_hint
                 then
-                    map('<leader>ht', function()
-                        vim.lsp.inlay_hit.enable(
+                    map('n', '<leader>ht', function()
+                        vim.lsp.inlay_hint.enable(
                             not vim.lsp.inlay_hint.is_enabled()
                         )
                     end, '[H]ints [T]oggle')
