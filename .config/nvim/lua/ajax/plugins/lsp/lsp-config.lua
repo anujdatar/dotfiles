@@ -258,7 +258,7 @@ return {
             rust_analyzer = {},
             jsonls = {},
             yamlls = {},
-            tsserver = {},
+            ts_ls = {},
             astro = {},
             svelte = {},
             volar = {},
