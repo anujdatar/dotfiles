@@ -36,7 +36,9 @@ opt.colorcolumn = '80'
 -- Swap and undo history
 opt.swapfile = false
 opt.backup = false
-opt.undodir = os.getenv('HOME') .. '/.vim/undodir'
+-- opt.undodir = os.getenv('HOME') .. '/.vim/undodir' -- for linux
+-- opt.undodir = os.getenv('UserProfile') .. '/.vim/undodir' -- for windows
+opt.undodir = (os.getenv('HOME') or os.getenv('UserProfile') .. '/.vim/undodir' -- for both maybe
 opt.undofile = true
 
 opt.scrolloff = 8
