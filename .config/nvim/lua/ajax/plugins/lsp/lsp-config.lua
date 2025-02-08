@@ -265,7 +265,7 @@ return {
             cssls = {},
             tailwindcss = {},
             html = {},
-            htmx = {},
+            htmx = {}, -- disable for windows
         }
 
         local ensure_installed = vim.tbl_keys(servers or {})
