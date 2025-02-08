@@ -39,7 +39,7 @@ return {
                 },
             },
         })
-        telescope.load_extension('fzf')
+        telescope.load_extension('fzf') -- disable for windows, can't find fzf
         telescope.load_extension('ui-select')
 
         local builtin = require('telescope.builtin')
