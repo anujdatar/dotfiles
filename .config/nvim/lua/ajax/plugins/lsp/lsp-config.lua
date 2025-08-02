@@ -261,7 +261,7 @@ return {
             ts_ls = {},
             astro = {},
             svelte = {},
-            volar = {},
+            vue_ls = {},
             cssls = {},
             tailwindcss = {},
             html = {},
