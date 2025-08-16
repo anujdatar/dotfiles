@@ -15,6 +15,15 @@ return {
                 return vim.fn.executable('make') == 1
             end,
         },
+
+        -- To use "cmake" for telescope-fzf-native, use the following
+        -- especially on Windows, MinGW doesn't always work best
+        -- Install Visual Studio Community and install C++ build Tools
+        -- {
+        -- 'nvim-telescope/telescope-fzf-native.nvim',
+        -- build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release'
+        -- },
+
         { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
         { 'folke/todo-comments.nvim' },
         { 'nvim-telescope/telescope-ui-select.nvim' },
