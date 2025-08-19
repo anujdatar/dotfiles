@@ -26,20 +26,21 @@ alias notes='vim $NOTES_FOLDER/index.md'
 alias goog="ping -c 4 www.google.com"
 alias goog6="ping6 -c 4 www.google.com"
 
-alias wscrcpy="adb kill-server && adb tcpip 5555 && db connect <device-ip>:5555 && scrcpy"
+# alias wscrcpy="adb kill-server && adb tcpip 5555 && db connect <device-ip>:5555 && scrcpy"
+
+# for QT apps in Gnome / GTK environments - can also try qt5ct or qt6ct
 export QT_QPA_PLATFORMTHEME=gtk2
 
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# some more aliases
-# some more ls aliases
+# ls aliases
 alias ls='ls --color'
 alias ll='ls -alF --color'
 alias la='ls -A --color'
 alias l='ls -CF --color'
 alias c='clear'
-alias vim=nvim
+#alias vim=nvim
 
 if [ -f "$HOME/.bash_aliases" ]; then
     . $HOME/.bash_aliases
