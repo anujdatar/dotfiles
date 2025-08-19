@@ -1,0 +1,3 @@
+font-family = "FiraCode Nerd Font Mono"
+shell-integration-features = no-cursor
+cursor-style = block
